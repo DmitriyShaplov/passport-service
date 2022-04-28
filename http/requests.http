@@ -1,0 +1,26 @@
+GET localhost:8081/passports/find
+###
+POST localhost:8081/passports/save
+Content-Type: application/json
+
+{
+  "series": "1111",
+  "number": "123123",
+  "dateOfIssue": "05.05.2010",
+  "issuedLocality": "Moscow",
+  "authority": "test",
+  "departmentCode": "123-123",
+  "lastName": "test",
+  "firstName": "test",
+  "middleName": "test",
+  "dateOfBirth": "05.05.1999",
+  "birthCountry": "Russia",
+  "birthCity": "test",
+  "birthPlace": "test",
+  "regRegion": "test",
+  "regCity": "test",
+  "regStreet": "test",
+  "regHouse": "123",
+  "regApartment": "123",
+  "validUntil": "05.06.2022"
+}

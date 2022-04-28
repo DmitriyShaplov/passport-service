@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  liquibase:
+    change-log: /db/changelog/master-changelog.xml
+    parameters:
+      schemaName: passports
+    liquibase-schema: public
+    database-change-log-table: passports_databaseChangeLog
+    database-change-log-lock-table: passports_databaseChangeLogLock
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+    hikari:
+      connection-init-sql: SET SEARCH_PATH TO passports
